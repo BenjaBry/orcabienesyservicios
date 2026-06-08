@@ -756,6 +756,23 @@ ul {
     transform: scale(1.05);
 }
 
+/* Modificadores de Galería de Fotos (Ajuste de cantidad de imágenes) */
+.gallery-grid.cols-1 {
+    grid-template-columns: 1fr;
+}
+.gallery-grid.cols-1 .gallery-item {
+    height: 450px;
+}
+
+.gallery-grid.cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.gallery-grid.cols-2 .gallery-item {
+    height: 350px;
+    grid-column: auto !important;
+    grid-row: auto !important;
+}
+
 /* Diseño de Contenido Principal (Detalle) */
 .property-info-layout {
     display: grid;
@@ -1275,9 +1292,9 @@ ul {
 
 @media (max-width: 768px) {
     .header {
-        background-color: var(--glass-bg);
+        background-color: var(--bg-white) !important;
         border-bottom: 1px solid var(--border-color);
-        padding: 16px 0;
+        padding: 12px 0;
     }
     
     .header:not(.scrolled) .logo-text {
@@ -1287,6 +1304,7 @@ ul {
     
     .menu-toggle {
         display: block;
+        color: var(--primary) !important;
     }
     
     .nav-menu {
@@ -1321,6 +1339,12 @@ ul {
         display: none;
     }
     
+    .hero {
+        height: auto !important;
+        min-height: auto !important;
+        padding: 120px 0 60px 0 !important;
+    }
+    
     .hero-text h1 {
         font-size: 2.2rem;
     }
@@ -1330,8 +1354,24 @@ ul {
         grid-template-columns: 1fr;
     }
     
+    .contact-detail-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
     .gallery-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .gallery-grid.cols-1 .gallery-item {
+        height: 280px !important;
+    }
+    
+    .gallery-grid.cols-2 {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .gallery-grid.cols-2 .gallery-item {
+        height: 250px !important;
     }
     
     .gallery-item:first-child {

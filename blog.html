@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B3RLGC7M0H"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-B3RLGC7M0H');
-</script>
-
     <link rel="shortcut icon" href="https://res.cloudinary.com/dhew6sfwc/image/upload/ICONO_ORCA_BIENES_Y_SERVICIOS.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -164,6 +153,27 @@
                 font-size: 2.2rem;
             }
         }
+        @media (max-width: 580px) {
+            .blog-search-bar {
+                flex-direction: column;
+                border-radius: var(--radius-md);
+                margin: -20px auto 30px auto;
+                padding: 12px;
+                gap: 12px;
+                max-width: 100%;
+            }
+            .blog-search-bar input {
+                padding: 12px 16px;
+                font-size: 0.95rem;
+                width: 100%;
+                border-radius: var(--radius-sm);
+            }
+            .blog-search-bar button {
+                padding: 12px;
+                width: 100%;
+                border-radius: var(--radius-sm);
+            }
+        }
     </style>
 </head>
 <body>
@@ -211,6 +221,7 @@
         <div class="container">
             <div class="blog-grid" id="blog-posts-grid">
                 
+           
                 <!-- 2 -->
                 <article class="blog-card" data-title="financiamiento bancario propio diferencias">
                     <div class="blog-card-content">
