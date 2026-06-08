@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Inmobiliario de Guatemala | ORCA Bienes y Servicios</title>
+    
+    <!-- Meta Tags SEO -->
+    <meta name="description" content="Aprende sobre inversiones inmobiliarias, financiamiento propio, trámites de escrituración y plusvalía de terrenos en Zacapa, Escuintla y Sacatepéquez.">
+    <meta name="keywords" content="bienes raices guatemala, terrenos a plazos, comprar lote guatemala, registro general de la propiedad, plusvalia guatemala">
+    <link rel="canonical" href="https://orca.com.gt/blog.html">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <style>
+        .blog-header {
+            background-color: var(--primary);
+            color: var(--bg-white);
+            padding: 140px 0 60px 0;
+            text-align: center;
+        }
+        .blog-header h1 {
+            color: var(--bg-white);
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        .blog-header p {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1.15rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .blog-search-bar {
+            max-width: 600px;
+            margin: -30px auto 40px auto;
+            position: relative;
+            z-index: 10;
+            display: flex;
+            gap: 12px;
+            background: var(--bg-white);
+            padding: 10px;
+            border-radius: var(--radius-full);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-color);
+        }
+        .blog-search-bar input {
+            flex: 1;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+            outline: none;
+            font-family: 'Outfit', sans-serif;
+            border-radius: var(--radius-full);
+        }
+        .blog-search-bar button {
+            background-color: var(--primary);
+            color: var(--bg-white);
+            border: none;
+            padding: 0 24px;
+            border-radius: var(--radius-full);
+            font-family: 'Outfit', sans-serif;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .blog-search-bar button:hover {
+            background-color: var(--primary-light);
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-bottom: 60px;
+        }
+        .blog-card {
+            background: var(--bg-white);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+            border-color: rgba(11, 44, 77, 0.1);
+        }
+        .blog-card-content {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        .blog-meta {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+            display: flex;
+            gap: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .blog-category {
+            color: var(--secondary);
+            font-weight: 600;
+        }
+        .blog-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+            line-height: 1.35;
+        }
+        .blog-card p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            flex: 1;
+            line-height: 1.5;
+        }
+        .blog-card-footer {
+            border-top: 1px solid var(--border-color);
+            padding-top: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .read-more-btn {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--primary);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: var(--transition);
+        }
+        .read-more-btn:hover {
+            color: var(--secondary);
+            transform: translateX(3px);
+        }
+        @media (max-width: 992px) {
+            .blog-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+            .blog-header h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CABECERA (Header) -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo-link">
+                    <img src="https://res.cloudinary.com/dhew6sfwc/image/upload/LOGO_ORCA_BIENES_Y_SERVICIOS.jpg" alt="Logo ORCA Bienes y Servicios" class="logo-img">
+                    <span class="logo-text">ORCA</span>
+                </a>
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="propiedades.html" class="nav-link">Propiedades</a>
+                    <a href="nosotros.html" class="nav-link">Nosotros</a>
+                    <a href="contacto.html" class="nav-link">Contacto</a>
+                    <a href="blog.html" class="nav-link active">Blog</a>
+                </nav>
+                <div class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- DETALLE ENCABEZADO -->
+    <section class="blog-header">
+        <div class="container">
+            <h1>Blog Inmobiliario de Guatemala</h1>
+            <p>Tu guía profesional para comprar lotes, escriturar propiedades, entender financiamientos y maximizar la plusvalía de tus inversiones de forma segura.</p>
+        </div>
+    </section>
+
+    <!-- BARRA DE BÚSQUEDA -->
+    <div class="container">
+        <div class="blog-search-bar">
+            <input type="text" id="blog-search" placeholder="Buscar artículos por tema o palabra clave..." onkeyup="filterBlogs()">
+            <button type="button"><i class="fas fa-search"></i> Buscar</button>
+        </div>
+    </div>
+
+    <!-- CUADRÍCULA DE BLOGS -->
+    <section class="section-padding" style="padding-top: 0;">
+        <div class="container">
+            <div class="blog-grid" id="blog-posts-grid">
+                
+                <!-- 1 -->
+                <article class="blog-card" data-title="guia completa comprar terrenos guatemala">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Guía de Compra</span>
+                            <span>• Hace 2 días</span>
+                        </div>
+                        <h3>Guía Completa para Comprar Terrenos en Guatemala</h3>
+                        <p>Descubre el proceso legal y los pasos recomendados para adquirir terrenos residenciales o agrícolas de manera 100% segura y bajo la normativa vigente.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2 -->
+                <article class="blog-card" data-title="financiamiento bancario propio diferencias">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Finanzas</span>
+                            <span>• Hace 4 días</span>
+                        </div>
+                        <h3>Financiamiento Bancario vs Propio: ¿Cuál elegir?</h3>
+                        <p>Analizamos las diferencias clave, ventajas de aprobación rápida, requisitos de buró de crédito y tasas de interés al financiar directamente con el desarrollador.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 3 -->
+                <article class="blog-card" data-title="invertir bienes raices zacapa oriente plusvalia">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Plusvalía</span>
+                            <span>• Hace 1 semana</span>
+                        </div>
+                        <h3>¿Por qué Invertir en Bienes Raíces en Zacapa?</h3>
+                        <p>El oriente de Guatemala muestra tasas de crecimiento y plusvalía excepcionales debido a su conectividad y desarrollo comercial continuo.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 4 -->
+                <article class="blog-card" data-title="crecimiento inmobiliario rio hondo zacapa lotes">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Desarrollo</span>
+                            <span>• Hace 1 semana</span>
+                        </div>
+                        <h3>El Crecimiento Inmobiliario de Río Hondo</h3>
+                        <p>Exploramos el auge de proyectos residenciales en Río Hondo, Zacapa, impulsado por su excelente clima, abundantes pozos de agua y tranquilidad regional.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 5 -->
+                <article class="blog-card" data-title="como escriturar lote guatemala registro propiedad">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Legal</span>
+                            <span>• Hace 2 semanas</span>
+                        </div>
+                        <h3>Cómo Escriturar un Lote en Guatemala: Pasos</h3>
+                        <p>Te enseñamos el proceso legal de escrituración ante notario, el pago del IVA por primera venta y la inscripción formal en el Registro de la Propiedad.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 6 -->
+                <article class="blog-card" data-title="beneficios lotes urbanizados 6x18 construccion">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Construcción</span>
+                            <span>• Hace 2 semanas</span>
+                        </div>
+                        <h3>Beneficios de los Lotes Urbanizados de 6x18 Metros</h3>
+                        <p>Conoce por qué las medidas de 6x18 metros son altamente optimizadas para viviendas familiares, minimizando costos y maximizando el espacio útil.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 7 -->
+                <article class="blog-card" data-title="terrenos cultivos puerto san jose escuintla papaya coco">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Inversión Agrícola</span>
+                            <span>• Hace 3 semanas</span>
+                        </div>
+                        <h3>Fincas y Terrenos de Cultivo en Escuintla</h3>
+                        <p>Por qué comprar terrenos fértiles con sembrados de papaya y coco representa un ingreso pasivo y activo sumamente atractivo en la costa sur.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 8 -->
+                <article class="blog-card" data-title="clima san juan sacatepequez bosques viviendas">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Estilo de Vida</span>
+                            <span>• Hace 3 semanas</span>
+                        </div>
+                        <h3>El Clima y la Calidad de Vida en San Juan</h3>
+                        <p>San Juan Sacatepéquez se destaca por sus hermosos bosques de pino, clima fresco todo el año y su creciente oferta de condominios cerrados.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 9 -->
+                <article class="blog-card" data-title="enganche cero cuotas financiamiento directo">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Finanzas</span>
+                            <span>• Hace 1 mes</span>
+                        </div>
+                        <h3>¿Qué Significa "Enganche Cero" y su Ahorro?</h3>
+                        <p>Te explicamos cómo funciona el enganche del 0% en proyectos inmobiliarios seleccionados y cómo te ayuda a adquirir tu patrimonio sin ahorros previos.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 10 -->
+                <article class="blog-card" data-title="consejos construir casa lote planos cimentacion">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Construcción</span>
+                            <span>• Hace 1 mes</span>
+                        </div>
+                        <h3>Consejos para Construir tu Casa desde Cero</h3>
+                        <p>Una guía práctica sobre planificación de planos, contratación de albañiles, elección de blocks de resistencia y acabados para tu nuevo terreno.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 11 -->
+                <article class="blog-card" data-title="calcular retorno inversion roi terrenos plusvalia">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Inversiones</span>
+                            <span>• Hace 1 mes</span>
+                        </div>
+                        <h3>Cómo Calcular el Retorno de Inversión (ROI)</h3>
+                        <p>Aprende las fórmulas básicas para proyectar la plusvalía anual de tus terrenos y estimar las ganancias netas al vender a mediano y largo plazo.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 12 -->
+                <article class="blog-card" data-title="plusvalia mazatenango suchitepequez costa sur">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Plusvalía</span>
+                            <span>• Hace 1 mes</span>
+                        </div>
+                        <h3>La Plusvalía de Mazatenango y la Costa Sur</h3>
+                        <p>Mazatenango se consolida como el motor comercial del surponiente. Su cercanía a puertos y su alta densidad poblacional impulsan el costo de la tierra.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 13 -->
+                <article class="blog-card" data-title="servicios basicos lote agua luz drenajes">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Guía de Compra</span>
+                            <span>• Hace 1 mes</span>
+                        </div>
+                        <h3>¿Qué Servicios Básicos Debe Tener un Lote?</h3>
+                        <p>Antes de firmar, asegúrate de que el residencial cuente con pozos propios de agua abundante, red eléctrica autorizada y drenajes de aguas negras.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 14 -->
+                <article class="blog-card" data-title="diferencia lote residencial lote comercial plusvalia">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Inversiones</span>
+                            <span>• Hace 2 meses</span>
+                        </div>
+                        <h3>Diferencias entre Lote Residencial y Comercial</h3>
+                        <p>Los lotes comerciales frente a carreteras transitadas tienen un valor por metro cuadrado mayor. Analizamos cuál se adapta mejor a tu meta de inversión.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 15 -->
+                <article class="blog-card" data-title="aspectos legales inmuebles guatemala contratos escrituras">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Legal</span>
+                            <span>• Hace 2 meses</span>
+                        </div>
+                        <h3>Aspectos Legales al Adquirir un Inmueble</h3>
+                        <p>La certeza jurídica es primordial. Revisamos cómo verificar que un inmueble esté libre de gravámenes, anotaciones judiciales o hipotecas.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 16 -->
+                <article class="blog-card" data-title="evitar estafas comprar propiedades consejos legales">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Seguridad</span>
+                            <span>• Hace 2 meses</span>
+                        </div>
+                        <h3>Cómo Evitar Estafas al Comprar Propiedades</h3>
+                        <p>Cinco alertas rojas que debes identificar cuando compras un lote y la importancia de tratar únicamente con desarrolladoras y asesores formales.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 17 -->
+                <article class="blog-card" data-title="ventajas comprar lotes preventa ahorro plusvalia">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Guía de Compra</span>
+                            <span>• Hace 2 meses</span>
+                        </div>
+                        <h3>Ventajas de Comprar Lotes en Pre-venta</h3>
+                        <p>La pre-venta ofrece los precios más bajos del ciclo de vida de un proyecto inmobiliario, garantizándote ganancias por plusvalía desde el primer día.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 18 -->
+                <article class="blog-card" data-title="importancia seguridad garitas condominios residenciales">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Estilo de Vida</span>
+                            <span>• Hace 2 meses</span>
+                        </div>
+                        <h3>Importancia de la Seguridad en los Residenciales</h3>
+                        <p>Tener un acceso controlado con garitas, guardias de seguridad y muros perimetrales no solo te brinda paz mental sino que incrementa el valor de tu propiedad.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 19 -->
+                <article class="blog-card" data-title="influencia carreteras ca-09 plusvalia conexion regional">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Plusvalía</span>
+                            <span>• Hace 3 meses</span>
+                        </div>
+                        <h3>Cómo Influyen las Carreteras en la Plusvalía</h3>
+                        <p>Los lotes que colindan con autopistas de alta velocidad, como la CA-09 en Río Hondo, experimentan una valorización comercial masiva por su accesibilidad.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 20 -->
+                <article class="blog-card" data-title="inversiones migrantes guatemaltecos estados unidos remesas">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Inmigrantes</span>
+                            <span>• Hace 3 meses</span>
+                        </div>
+                        <h3>Inversiones Inmobiliarias para Migrantes</h3>
+                        <p>Cómo los guatemaltecos que residen en EE.UU. pueden comprar terrenos en su país de origen de forma legal y remota para asegurar el futuro de su familia.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 21 -->
+                <article class="blog-card" data-title="ahorrar dinero financiamiento directo desarrolladora">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Finanzas</span>
+                            <span>• Hace 3 meses</span>
+                        </div>
+                        <h3>Cómo Ahorrar Dinero al Financiar Directo</h3>
+                        <p>Estrategias clave como realizar abonos directos a capital de tu deuda inmobiliaria para reducir la duración y el interés acumulado de tu lote.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 22 -->
+                <article class="blog-card" data-title="tendencias viviendas niveles dormitorios sacatepequez">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Desarrollo</span>
+                            <span>• Hace 3 meses</span>
+                        </div>
+                        <h3>Tendencias de Viviendas en Sacatepéquez</h3>
+                        <p>Analizamos la alta demanda de modelos de casas de 1 nivel con 3 habitaciones y de 2 niveles con 5 habitaciones en la región templada del país.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 23 -->
+                <article class="blog-card" data-title="cultivo papaya coco escuintla rentabilidad tierras">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Inversión Agrícola</span>
+                            <span>• Hace 4 meses</span>
+                        </div>
+                        <h3>Cultivo de Papaya y Coco en Escuintla</h3>
+                        <p>Conoce los ciclos de cosecha, requerimiento de riego y rentabilidad promedio del cultivo comercial de papaya y coco en los terrenos de Escuintla.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 24 -->
+                <article class="blog-card" data-title="crear patrimonio familiar lotes pequeños ahorro">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Estilo de Vida</span>
+                            <span>• Hace 4 meses</span>
+                        </div>
+                        <h3>Cómo Crear un Patrimonio Familiar Sólido</h3>
+                        <p>Invertir en porciones de tierra es la forma más tradicional y segura de proteger tu capital contra la inflación y garantizar herencia para tus hijos.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 25 -->
+                <article class="blog-card" data-title="requisitos basicos financiamiento propio inmediato">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Finanzas</span>
+                            <span>• Hace 4 meses</span>
+                        </div>
+                        <h3>Requisitos Básicos para Financiamiento Propio</h3>
+                        <p>Olvídate del papeleo bancario. Conoce qué documentos de identidad sencillos y enganche inicial mínimo necesitas para calificar de inmediato.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 26 -->
+                <article class="blog-card" data-title="rol registro general propiedad guatemala legalidad">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Legal</span>
+                            <span>• Hace 4 meses</span>
+                        </div>
+                        <h3>El Rol del Registro General de la Propiedad</h3>
+                        <p>Por qué toda compra inmobiliaria seria en Guatemala debe concluir con el asiento de inscripción registrado bajo una finca, folio y libro único.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 27 -->
+                <article class="blog-card" data-title="rio hondo zacapa destino ideal retiro descanso">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Estilo de Vida</span>
+                            <span>• Hace 5 meses</span>
+                        </div>
+                        <h3>Por qué Río Hondo es el Destino Ideal de Retiro</h3>
+                        <p>Su excelente clima cálido moderado, su gente hospitalaria y su proximidad a balnearios y montañas hacen de Río Hondo un paraje de retiro inigualable.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 28 -->
+                <article class="blog-card" data-title="planificar presupuesto compra terreno gastos escrituracion">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Finanzas</span>
+                            <span>• Hace 5 meses</span>
+                        </div>
+                        <h3>Planificar el Presupuesto para Comprar Terrenos</h3>
+                        <p>Más allá de la cuota: te enseñamos a incluir los gastos de escrituración honorarios notariales e impuestos de traspaso para evitar sorpresas financieras.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 29 -->
+                <article class="blog-card" data-title="lotes agua abundante pozos propios oriente">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Desarrollo</span>
+                            <span>• Hace 5 meses</span>
+                        </div>
+                        <h3>Lotes con Agua Abundante: Clave en Oriente</h3>
+                        <p>La escasez hídrica de la región de oriente es un factor crucial. Conoce la importancia de comprar lotes en desarrollos con pozos mecánicos industriales autorizados.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 30 -->
+                <article class="blog-card" data-title="errores comunes elegir terreno construir casa suelo">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Construcción</span>
+                            <span>• Hace 5 meses</span>
+                        </div>
+                        <h3>Errores Más Comunes al Elegir un Terreno</h3>
+                        <p>Desde obviar el análisis de suelo y las pendientes pronunciadas, hasta olvidar las restricciones municipales. Evita estos fallos comunes antes de construir.</p>
+                        <div class="blog-card-footer">
+                            <a href="#" class="read-more-btn">Leer Artículo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA (Footer) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Columna 1: ORCA -->
+                <div class="footer-brand">
+                    <h3>ORCA Bienes y Servicios</h3>
+                    <p>Asesoramos tus proyectos de vida ofreciéndote las mejores opciones de inversión inmobiliaria en Guatemala. Formalidad, confianza y rapidez.</p>
+                </div>
+                
+                <!-- Columna 2: Navegación -->
+                <div class="footer-column">
+                    <h4>Menú</h4>
+                    <nav class="footer-links">
+                        <a href="index.html">Inicio</a>
+                        <a href="propiedades.html">Propiedades</a>
+                        <a href="nosotros.html">Nosotros</a>
+                        <a href="contacto.html">Contacto</a>
+                        <a href="blog.html">Blog</a>
+                    </nav>
+                </div>
+
+                <!-- Columna 3: Proyectos -->
+                <div class="footer-column">
+                    <h4>Proyectos</h4>
+                    <nav class="footer-links">
+                        <a href="propiedades/condado-san-felipe.html">Condado San Felipe</a>
+                        <a href="propiedades/residenciales-la-sierra.html">Residenciales La Sierra</a>
+                        <a href="propiedades/rio-hondo-ca09.html">Lotes CA-09 Río Hondo</a>
+                        <a href="propiedades/lotes-6x18.html">Lotes Urbanizados 6x18</a>
+                        <a href="propiedades/terreno-puerto-san-jose.html">Terreno Puerto San José</a>
+                        <a href="propiedades/casas-san-juan.html">Casas San Juan</a>
+                    </nav>
+                </div>
+
+                <!-- Columna 4: Contacto -->
+                <div class="footer-column">
+                    <h4>Contacto Oficial</h4>
+                    <div class="footer-contact-list">
+                        <div class="footer-contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+502 4897 3479</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>Chat Directo: 4897 3479</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>groupoc387@gmail.com</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Escuintla</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 ORCA Bienes y Servicios. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÓN DE WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/50248973479?text=Hola%20ORCA%20Bienes%20y%20Servicios%2C%20solicito%20informaci%C3%B3n%20sobre%20los%20proyectos%20inmobiliarios%20disponibles." class="whatsapp-float" target="_blank" aria-label="Contacto por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        function filterBlogs() {
+            var input = document.getElementById('blog-search');
+            var filter = input.value.toLowerCase();
+            var grid = document.getElementById('blog-posts-grid');
+            var cards = grid.getElementsByTagName('article');
+            
+            for (var i = 0; i < cards.length; i++) {
+                var searchTerms = cards[i].getAttribute('data-title');
+                if (searchTerms.indexOf(filter) > -1) {
+                    cards[i].style.display = "";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
